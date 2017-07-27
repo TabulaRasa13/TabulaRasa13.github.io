@@ -1,0 +1,288 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+.social span{
+	margin-top: 16px;
+	margin-right: 20px;
+}
+	
+.head-text-wrap h1{
+	font-size: 32px;
+}
+	
+.head-text-wrap p{
+	font-size: 16px;
+}
+.button-head p{
+	font-size: 22px;
+	margin-bottom: 0;
+}
+	
+nav{
+	display: none;
+}
+
+.nav-mobile{
+	display: block;
+	position: absolute;
+	top: 62px;
+	right: -500px;
+	width: 360px;
+	background-color: #2C3E50;
+	z-index: 2;
+	transition: all linear .5s
+	
+}
+
+	
+	.nav-mobile-show{
+	right: 0;
+	
+	}
+
+	.nav-mobile ul li{
+	display: block;
+	text-align: center;
+	border-bottom: 1px solid white;
+	
+
+}
+	.nav-mobile ul li:last-child{
+		border-bottom: none;
+	}
+	
+	.nav-mobile ul li a{
+		font-size: 14px;
+		display: block;
+		line-height: normal;
+		padding: 20px 0;
+	}
+	
+	.present-block{
+		max-width: 320px;
+		margin: 0 auto 70px;
+	
+	}
+	.job-wrap{
+		margin-bottom: 30px;
+	}
+			
+}
+
+
+
+
+@media only screen and (max-width : 890px) {
+	
+.head-img{
+	margin-left: 10px;
+}
+.head-img span img{
+	width: 140px;
+	right: 155px;
+}	
+	
+	
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+.logo{
+	padding-left: 20px;
+	background-color: #ECF0F1;
+	height: 60px;
+	max-width: 150px;
+}
+.social span{
+	margin-right: 15px;
+}
+	.head-text-wrap{
+		text-align: center;
+		margin-bottom: 40px;
+		margin-left: 0;
+	}
+.head-text-wrap h1{
+	font-size: 28px;
+	margin: 20px 0;
+
+}
+	
+.head-text-wrap p{
+	margin-bottom: 20px;
+}
+.button-head p{
+	margin-bottom: 0;
+}
+.button-head{
+	padding: 0;
+	width: 200px;
+	height: 50px;
+}
+.head-img{
+	display: none;
+}	
+.head-img span img{
+	width: 140px;
+	left: 155px;
+}
+.hide-img{
+	display: block;
+	position: relative;
+	left: 100px;
+	margin: 0 auto;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+	
+	.job-wrap{
+		max-width: 70%;
+		margin: 0 auto 30px;
+	}
+	
+
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+	header{
+		margin-bottom: 40px;
+	}
+.logo{
+	padding-top: 0;
+	padding-left: 10px;
+	
+}
+.logo span{
+	font-size: 15px;
+	padding-top: 0;
+}
+
+.logo-name {
+	color: #2C3E50;
+	margin: 0;
+	font-size: 18px;
+}
+
+.social span{
+	margin-right: 3px;
+}
+.head-text-wrap h1{
+	font-size: 24px;
+	margin: 20px 0;
+
+}
+	
+.head-text-wrap p{
+	font-size: 14px;
+}
+.button-head{
+	width: 200px;
+	height: 50px;
+}
+.button-head p{
+	font-size: 20px;
+}
+.hide-img{
+	left: 30px;
+}	
+
+.about img{
+	max-width: 250px;
+}
+.about-title{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.about-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	
+}
+.about-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	
+}
+.about:hover .about-title:after{
+	width: 50px;
+}
+.about:hover .about-title:before{
+	width: 50px;
+}
+
+
+	
+.job-wrap{
+		max-width: 90%;
+		margin-bottom: 100px;
+	
+	}
+.job-title {
+	font-size: 20px;
+}	
+	
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px) {
+	
+.hide-img{
+	margin-left: 30px;
+}	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

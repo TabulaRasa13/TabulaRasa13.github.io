@@ -154,7 +154,7 @@ nav{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+
 	header{
 		margin-bottom: 40px;
 	}
@@ -175,17 +175,19 @@ nav{
 }
 
 .social span{
-	margin-right: 3px;
+	margin-right: 10px;
 }
+.res{
+	padding: 0;
+}
+
 .head-text-wrap h1{
 	font-size: 24px;
 	margin: 20px 0;
 
 }
 	
-.head-text-wrap p{
-	font-size: 14px;
-}
+
 .button-head{
 	width: 200px;
 	height: 50px;
@@ -203,8 +205,8 @@ nav{
 .about-title{
 	font-size: 20px;
 	margin-bottom: 20px;
+	
 }
-
 .about-title:after{
 	content: "";
 	display: inline-block;
@@ -231,17 +233,214 @@ nav{
 .about:hover .about-title:before{
 	width: 50px;
 }
-
-
-	
-.job-wrap{
-		max-width: 90%;
-		margin-bottom: 100px;
-	
+	.about-text-title{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 24px;
 	}
+	.about-text p{
+		line-height: 1.2;
+		padding: 0 20px;
+		text-align: left;
+	}
+	.advantage-title{
+		margin: 30px 0 20px;
+		font-size: 20px;	
+	}
+.advantage-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 20px;
+}
+.advantage-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 20px;
+}
+.advantage-title:hover:after{
+	width: 50px;
+}
+.advantage-title:hover:before{
+	width: 50px;
+}
+.advantage-circle {
+	margin-top: 10px;
+}
+	.advantage-text{
+		margin-top: 10px;
+		padding: 0 50px;
+		text-align: center;
+	}
+	.present{
+		margin-bottom: 30px;
+	}
+	.present-title{
+		font-size: 20px;
+	}
+.present-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 10px;
+}
+.present-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 10px;
+}
+.present-title:hover:after{
+	width: 45px;
+}
+.present-title:hover:before{
+	width: 45px;
+}
+	.present-text{
+		font-size: 16px;
+	}
+	.present-text h3{
+		font-size: 16px;
+	}
+	.present-block{
+		margin-bottom: 40px;
+	}
+
 .job-title {
 	font-size: 20px;
-}	
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+.job-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 20px;
+}
+.job-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 20px;
+}
+.job-title:hover:after{
+	width: 50px;
+}
+.job-title:hover:before{
+	width: 50px;
+}
+.job-wrap{
+	max-width: 200px;
+	margin-bottom: 50px;
+	padding: 25px 20px 15px;
+	
+	}
+	.job i{
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	.portfolio-title{
+		margin-bottom: 40px;
+		margin-top: 40px;
+		font-size: 20px;
+	}
+.portfolio-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 20px;
+}
+.portfolio-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 20px;
+}
+.portfolio-title:hover:after{
+	width: 50px;
+}
+.portfolio-title:hover:before{
+	width: 50px;
+}
+	.portfolio-text{
+		margin-top: 0;
+		line-height: 1.2;
+		padding: 0 20px;
+		margin-bottom: 50px;
+	}
+	.portfolio-text h2{
+		margin-top: 0;
+	}
+.reviews-title{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 20px;
+}
+.reviews-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 20px;
+}
+.reviews-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 20px;
+}
+.reviews-title:hover:after{
+	width: 50px;
+}
+.reviews-title:hover:before{
+	width: 50px;
+}
+	.faq{
+		margin-top: 0;
+	}	
+	
+	
 	
 }
 

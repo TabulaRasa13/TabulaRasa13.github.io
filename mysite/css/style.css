@@ -12,9 +12,7 @@ body {
 	height: 100%;
 	font-size: 16px;
 	color: #ECF0F1;
-	
-	
-
+	line-height: normal;
 }
 a,
 a:visited,
@@ -358,10 +356,8 @@ header {
 	margin-top: 30px;
 }
 .about-text p{
-	line-height: 1.7;
+	line-height: 1.4;
 	padding: 0 20px;
-	
-	
 }
 
 
@@ -383,7 +379,7 @@ header {
 }
 
 .advantage>.container{
-	padding-top: 50px;
+/*	padding-top: 50px;*/
 	
 }
 
@@ -610,7 +606,7 @@ div.ui-draggable.ui-draggable-handle{
 	border-radius: 5px;
 	box-shadow: 0 0 3px 1px #ECF0F1;
 	position: relative;
-	font-size: 15px;
+	
 }
 
 .job-wrap:before {
@@ -775,7 +771,7 @@ div.ui-draggable.ui-draggable-handle{
 
 .slider-slick-wrap {
 	max-width: 500px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 .slider-slick{
 	width: 100%;

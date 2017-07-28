@@ -439,9 +439,57 @@ nav{
 	.faq{
 		margin-top: 0;
 	}	
-	
-	
-	
+	.slider-slick-wrap img{
+		margin: 0 auto;
+	}
+	.slider-slick-wrap i{
+		font-size: 25px;
+		padding: 0 8px;
+	}
+	.slick-item p{
+		padding-top: 20px;
+	}
+	.slick-dots{
+		bottom: -45px;
+	}
+.contact-title{
+	font-size: 20px;
+}
+.contact-title:after{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-left: 20px;
+}
+.contact-title:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 2px;
+	background: #e74c3c;
+	transition: all linear .4s;
+	margin-right: 20px;
+}
+.contact:hover .contact-title:after{
+	width: 50px;
+}
+.contact:hover .contact-title:before{
+	width: 50px;
+}
+	.contacts-adres-wrap {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.forms{
+		margin-left: 0;
+		max-width: 300px;
+		margin: 0 auto 40px;
+	}	
 }
 
 

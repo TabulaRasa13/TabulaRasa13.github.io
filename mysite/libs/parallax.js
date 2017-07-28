@@ -165,7 +165,7 @@
     zIndex:   -100,
     iosFix:   true,
     androidFix: true,
-    position: 'center',
+    position: 'left',
     overScrollFix: false,
 
     refresh: function() {

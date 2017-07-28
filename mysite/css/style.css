@@ -986,15 +986,17 @@ color:#fff;
  * Fade-move animation for second dialog
  */
 #popup-modal {
-	background: white;
-	padding: 20px 30px;
+
+	padding: 0;
 	text-align: left;
-	max-width: 400px;
+	max-width: 320px;
 	margin: 40px auto;
 	position: relative;
 	color: #2C3E50;
 }
-
+.mfp-close-btn-in .mfp-close{
+	color: #ECF0F1;
+}
 /* at start */
 .my-mfp-slide-bottom .zoom-anim-dialog {
 	opacity: 0;

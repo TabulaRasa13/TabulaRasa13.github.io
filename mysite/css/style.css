@@ -364,11 +364,9 @@ header {
 
 /*//////////////////////////////////////// advantage /////////////////////////////////////////////*/
 .advantage {
-/*
 	background-image: url(../img/hd-wallpapers11.jpg);
 	background-position: center;
 	background-size: cover;
-*/
 	min-height: 500px;
 	margin-bottom: 50px;	
 }
@@ -424,9 +422,9 @@ header {
 	height: 60px;
 	border-radius: 50%;
 	margin-top: 50px;
-	border: 2px solid #ECF0F1;
+	border: 1px solid #e74c3c;
 	transition: all linear .25s;
-	background-color: #2980B9;
+/*	background-color: #2980B9;*/
 }
 
 .advantage-circle:hover{
@@ -652,12 +650,11 @@ div.ui-draggable.ui-draggable-handle{
 .portfolio{
 	min-height: 600px;
 	color: #2C3E50;
-	background-color: #ECF0F1;
-/*
-	background-image: url(../img/foto_bg.jpg);
-	background-size: cover;
+/*	background-color: #ECF0F1;*/
+	background-image: url(../img/portfoto_bg.jpg);
 	background-position: center;
-*/
+	background-repeat: no-repeat;
+	background-size: cover;
 /*	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);*/
 	
 }

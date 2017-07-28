@@ -1045,7 +1045,7 @@ color:#fff;
 }
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
-	opacity: 0.8;
+	opacity: 0.95;
 }
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {

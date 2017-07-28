@@ -494,19 +494,19 @@ header {
 
 
 .present-block{
-	box-shadow: 0 0 10px 5px rgb(221, 221, 221);
-	transition: all linear .4s;
+	box-shadow: 0 0 10px 3px rgb(195, 195, 195);
+	transition: all linear .3s;
 	border-radius: 5px;
 	color: #2C3E50;
 	padding: 10px;
 	max-width: 320px;
 	margin: 0 auto;
 	min-height: 100%;
-	background-color: #ECF0F1;
+/*	background-color: #ECF0F1;*/
 }
 
 .present-block:hover{
-	box-shadow: 0 0 8px 5px rgb(168, 168, 168);
+	box-shadow: 0 0 8px 4px rgb(119, 119, 119);
 }
 
 
@@ -527,15 +527,24 @@ header {
 	margin-bottom: 20px;
 }
 .present-text a{
+	color: #ECF0F1;
 	display: block;
-	background-color: #3498DB;
+	background: rgb(212,75,56);
 	margin: 0 auto 15px;
 	padding: 10px;
 	width: 200px;
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgb(0, 0, 0);
+	border-radius: 3px;
+	box-shadow: 0px -3px #c12616 inset;
+/*	box-shadow: 0 -3px rgb(53,167,110) inset;*/
 }
-
+.present-text a:hover{
+	background: rgb(232,95,76); 
+	box-shadow: 0px 0px inset;
+}
+.present-text a:active{
+	position:relative;
+	top:2px;
+}
 div.ui-draggable.ui-draggable-handle{
 	opacity: 1 !important; 
 }
@@ -632,7 +641,7 @@ div.ui-draggable.ui-draggable-handle{
 	
 }
 .job-wrap:hover i{
-	color: #E74C3C;
+/*	color: #E74C3C;*/
 	transform: rotate(360deg);
 }
 
@@ -879,12 +888,13 @@ div.ui-draggable.ui-draggable-handle{
 
 
 .forms{
-	background-color: rgba(236, 240, 241, 0.7);
+	background-color: rgba(44, 62, 80, 0.9);
 	padding: 20px 30px 30px;
-	max-width: 380px;
-	color: #2C3E50;
+	max-width: 320px;
+	color: #ECF0F1;
+	border-radius: 4px;
 	margin-left: 50px;
-	box-shadow: 2px 2px 7px #e5e5e5;
+/*	box-shadow: 2px 2px 3px #e5e5e5;*/
 	margin-bottom: 30px;
 
 }
@@ -916,32 +926,55 @@ div.ui-draggable.ui-draggable-handle{
 .forms button{
 	font-size: 18px;
 	padding: 5px 40px;
-	background-color: #4b4b4b;
+	background-color: rgb(212,75,56);
 	border: none;
-	transition: all .5s ease;
-
+/*	transition: all .2s ease;*/
+	border-radius: 3px;
+	outline: none;
 }
 .forms button:hover{
-	background-color: #333333;
-
+	background-color: rgb(232,95,76); 
 }
 
 .forms button:active{
-	background-color: #171717;
-	transition: all .3s ease;
-
+	position: relative;
+	top: 2px;
 }
 
+/*-------кнопка норм---------*/
+/*
+a.glo{
+ color:#00c6ff;
+ padding: 10px 20px;
+ width:100px;
+ text-decoration:none;
+ text-align:center;
+ margin:20px auto;
+ display: block;
+ background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%,#00c6ff);
+ background-position: 100% 0;
+ background-size: 200% 100%;
+ transition: all .25s ease-in;
+ font: 400 18px tahoma;
+ border: 1px solid #00C6FF;
+}
+a.glo:hover {
+background-position: 0 0;
+color:#fff;
+}
+*/
 
 .footer-line{
 	min-height: 30px;
 	background-color: rgba(41, 128, 185, 0.7);
 	padding: 5px 0;
+	color: #ECF0F1;
+	font-size: 13px;
 	
 }
 .footer-line span a{
 	color: #151c22;
-	font-size: 18px;
+	font-size: 15px;
 }
 .footer-line a:hover, footer a:focus{
 	color: #ECF0F1;

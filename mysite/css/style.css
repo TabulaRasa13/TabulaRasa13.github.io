@@ -55,6 +55,19 @@ a:focus {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+.nav-fixed{
+	padding-top: 60px;
+}
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(41, 128, 185, 0.9);
+	margin-bottom: 60px;
+	z-index: 9999;
+}
+
 .logo{
 	padding-left: 20px;
 	background-color: #ECF0F1;
@@ -218,7 +231,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 /*	padding-top: 60px;*/
 }
 
@@ -313,6 +326,8 @@ header {
 	min-height: 100vh;
 	margin-bottom: 30px;
 	color: #2C3E50;
+	position: relative;
+	padding-top: 60px;
 
 }
 .about-title{

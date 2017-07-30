@@ -4,6 +4,24 @@ $(document).ready(function() {
 		$("#menu").toggleClass("nav-mobile-show");	
 	});
 	
+	
+	
+	var headerH = $("#js-header").height();
+	var newH = headerH - 50;
+	$(document).on("scroll", function(){
+		var documentScroll = $(this).scrollTop();
+		if(documentScroll>newH){
+			$("#js-fixed-nav").addClass("fixed");
+			$("#js-header").addClass("nav-fixed");
+		}else{
+			$("#js-fixed-nav").removeClass("fixed");
+			$("#js-header").removeClass("nav-fixed");
+		}
+		
+	});
+	
+	
+	
 	$( function() {
     $( "#accordion" ).accordion({
       collapsible: true,

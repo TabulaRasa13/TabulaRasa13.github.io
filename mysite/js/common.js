@@ -22,6 +22,17 @@ $(document).ready(function() {
 	
 	
 	
+		$("nav a").on('click', function(event) {
+		var statusM = $("#menu").hasClass("nav-mobile-show");
+		if (statusM) {
+			$("#menu").removeClass("nav-mobile-show");
+			$(".mobile-line").removeClass("active");
+			console.log("123");
+		}
+
+	});
+	
+	
 	$( function() {
     $( "#accordion" ).accordion({
       collapsible: true,

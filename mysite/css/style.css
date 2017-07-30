@@ -559,9 +559,10 @@ div.ui-draggable.ui-draggable-handle{
   background: transparent;
 }
 .job {
-/*	background-image: url(../img/job_bg.jpg);*/
+	background-image: url(../img/job_bg.jpg);
 	background-position:left;
 	background-size: cover;
+	background-attachment: fixed;
 	min-height: 600px;
 	color: #ECF0F1;
 	position: relative;

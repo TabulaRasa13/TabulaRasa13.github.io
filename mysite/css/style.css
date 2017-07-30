@@ -379,9 +379,14 @@ header {
 
 /*//////////////////////////////////////// advantage /////////////////////////////////////////////*/
 .advantage {
+	position: relative;
 	background-image: url(../img/hd-wallpapers11.jpg);
 	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	min-height: 500px;
 	margin-bottom: 50px;	
 }

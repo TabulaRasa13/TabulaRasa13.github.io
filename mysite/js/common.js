@@ -27,7 +27,6 @@ $(document).ready(function() {
 		if (statusM) {
 			$("#menu").removeClass("nav-mobile-show");
 			$(".mobile-line").removeClass("active");
-			console.log("123");
 		}
 
 	});

@@ -38,7 +38,8 @@ nav{
 	width: 360px;
 	background-color: #2C3E50;
 	z-index: 2;
-	transition: all linear .5s
+	transition: all linear .5s;
+	 
 	
 }
 
@@ -452,6 +453,9 @@ nav{
 	.slick-dots{
 		bottom: -45px;
 	}
+.contact{
+	background-position: -340px 0;
+}
 .contact-title{
 	font-size: 20px;
 }
@@ -489,7 +493,10 @@ nav{
 		margin-left: 0;
 		max-width: 300px;
 		margin: 0 auto 40px;
-	}	
+	}
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.85;
+}
 }
 
 

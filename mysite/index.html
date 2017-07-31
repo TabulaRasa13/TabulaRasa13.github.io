@@ -22,8 +22,8 @@
 		<link href="css/lightbox.css" rel="stylesheet">
 		<link href="css/fotorama.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
-		<link href="css/style.css?version=21" rel="stylesheet">
-		<link rel="stylesheet" href="css/media.css?version=19" />
+		<link href="css/style.css?version=22" rel="stylesheet">
+		<link rel="stylesheet" href="css/media.css?version=20" />
 		<script src="libs/respond/respond.min.js"></script>
 </head>
 
@@ -89,7 +89,7 @@
 							По доступным ценам</p>
 							<img src="img/Y6x5TZim213ULI.png" class="hide-img" alt="" width="" height="">
 						
-						<a class="popup-with-move-anim" href="#popup-modal"><span class="button-head">
+						<a href="#popup-modal" class="popup-with-move-anim" data-form="Верхняя форма" id="topform" ><span class="button-head">
 						<p>Заказать</p></span></a>
 
 					</div>
@@ -108,13 +108,24 @@
    
    
 <div id="popup-modal" class="zoom-anim-dialog mfp-hide">
-	<form class="forms" id="form">
+			<form class="forms" id="callback">
+					<!-- Hidden Required Fields -->
+					
+					<div class="form-tnx">Спасибо за заявку. <br>
+					 Мы свяжемся с вами в ближайшее время.
+					</div>
+					<input type="hidden" name="project_name" value="Let's Portret">
+					<input type="hidden" name="admin_email" value="tabularasa6665@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Let's Portret">
+					<!-- END Hidden Required Fields -->
 					<h3>Закажите обратный звонок</h3>
 					<p>И мы свяжемся с вами в течение 15 мин.</p>
-					<input type="text" name="name" placeholder="Ваше имя" required /><br />
-					<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-					<button class="center-block">Отправить</button>
-				</form>
+					<input type="text" name="Name" placeholder="You name..." required><br>
+					
+					<input type="text" name="Phone" placeholder="You phone..." required><br>
+					<button>Send</button>
+					<input  class="formname" type="hidden" name="Форма">
+			</form>
 </div>
     
 <!--////////////////////////////////////////  О НАС  //////////////////////////////////////////////-->   
@@ -213,7 +224,7 @@
 						<div class="present-text">
 							<h3>Заголовок</h3>
 							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут.</p>
-							<a class="popup-with-move-anim" href="#popup-modal">Кнопка</a>
+							<a class="popup-with-move-anim" href="#popup-modal" data-form="Средняя форма">Кнопка</a>
 						</div>
 				 </div>
 			</div>
@@ -345,7 +356,69 @@
 		<div class="row">
 			<div class="col-md-5">
 			
+			
+			
+			
+			<div class="accordion-container">
+
+  <div class="set">
+    <a href="#">
+      Vestibulum 
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    </div>
+  </div>
+  <div class="set">
+    <a href="#">
+      Phasellus 
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+      <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+    </div>
+  </div>
+  <div class="set">
+    <a href="#">
+      Praesent 
+      <i class="fa fa-plus"></i>
+    </a>
+    <div class="content">
+      <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    </div>
+  </div>
+  <div class="set">
+    <a href="#">
+      Curabitur 
+      <i class="fa fa-plus"></i> 
+    </a>
+    <div class="content">
+      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+      
+    </div>
+  </div>
+   <div class="set">
+    <a href="#">
+      Curabitur 
+      <i class="fa fa-plus"></i> 
+    </a>
+    <div class="content">
+      <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+      
+    </div>
+  </div>
+  
+  
+</div>
+			
+			
+			
+			
+			
+			
 				<!-- FAQ -->
+<!--
 				<div class="faq">
 						<div class="faq__item">
 								<a href="#question-1" class="faq-title js-faq-title">Как заказать картину?</a>
@@ -354,13 +427,13 @@
 								</div>
 						</div>
 						<div class="faq__item">
-								<a href="#question-2" class="faq-title js-faq-title">Какие размеры бывают?<i class="fa fa-minus" aria-hidden="true"></i></a>
+								<a href="#question-2" class="faq-title js-faq-title">Какие размеры бывают?<i class="fa fa-plus js-faq-icon" aria-hidden="true"></i></a>
 								<div class="faq-content js-faq-content" id="question-2">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis quam ullam distinctio aliquid, ad aspernatur temporibus quis labore, est quidem voluptatum. Asperiores similique totam veritatis inventore velit distinctio, ullam!</p>
 								</div>
 						</div>
 						<div class="faq__item">
-								<a href="#question-3" class="faq-title js-faq-title">Доставка входит в стоимость? <i class="fa fa-plus" aria-hidden="true"></i></a>
+								<a href="#question-3" class="faq-title js-faq-title">Доставка входит в стоимость? <i class="fa fa-plus js-faq-icon" aria-hidden="true"></i></a>
 								<div class="faq-content js-faq-content" id="question-3">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt blanditiis quam ullam distinctio aliquid, ad aspernatur temporibus quis labore, est quidem voluptatum. Asperiores similique totam veritatis inventore velit distinctio, ullam!</p>
 								</div>
@@ -384,8 +457,9 @@
 								</div>
 						</div>
 	
-				</div><!-- /.faq -->
-
+				</div>
+-->
+<!-- /.faq -->
 				
 			</div>
 			
@@ -468,13 +542,37 @@
 			</div>
 			</div>
 			<div class="col-md-6">
-				<form class="forms" id="form">
+			
+				<form class="forms" id="callback">
+					<!-- Hidden Required Fields -->
+					
+					
+					<input type="hidden" name="project_name" value="Let's Portret">
+					<input type="hidden" name="admin_email" value="tabularasa6665@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Let's Portret">
+					<!-- END Hidden Required Fields -->
 					<h3>Закажите обратный звонок</h3>
 					<p>И мы свяжемся с вами в течение 15 мин.</p>
-					<input type="text" name="name" placeholder="Ваше имя" required /><br />
-					<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
-					<button class="center-block">Отправить</button>
-				</form>
+					<input type="text" name="Name" placeholder="You name..." required><br>
+					
+					<input type="text" name="Phone" placeholder="You phone..." required><br>
+					<button>Send</button>
+					<input  class="formname" type="hidden" name="Форма">
+			</form>
+			
+			
+			
+			
+<!--
+			<form id="form" class="forms">
+				<h3>Закажите обратный звонок</h3>
+				<p>И мы свяжемся с вами в течение 15 мин.</p>
+				<input type="text" name="name" placeholder="Ваше имя" required /><br />
+				<input type="text" name="phone" placeholder="Ваш телефон" required /><br />
+				<button>Отправить</button>
+			</form>
+-->
+				
 			</div>
 
 			</div>
@@ -527,7 +625,7 @@
 	
 <!------------------ JavaScript --------------------->	
 
-	<script src="libs/jquery-3.1.1.js"></script>
+	<script src="libs/jquery-3.1.1.js"></script>	
 	<script src="libs/jquery-ui.js"></script>
 	<script src="libs/bootstrap.js"></script>
 	<script src="libs/lightbox.js"></script>
@@ -547,6 +645,9 @@
 	
 	
   	<!--///////////////////	WOW Анимация ///////////////////////////-->
+
+
+		
 
 		<script>
 		new WOW().init();

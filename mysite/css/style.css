@@ -13,13 +13,14 @@ body {
 	font-size: 16px;
 	color: #ECF0F1;
 	line-height: normal;
+	overflow-x: hidden;
 }
 a,
 a:visited,
 a:hover,
 a:active,
 a:focus {
-	color: inherit;
+/*	color: inherit;*/
   text-decoration: none;
 	border: none;
 	outline: none;
@@ -32,6 +33,7 @@ a:focus {
 .pageWrapper {
 	max-width: 1400px;
 	margin: 0 auto;
+	overflow: hidden;
 	
 }
 
@@ -54,7 +56,6 @@ a:focus {
 	box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 	font-family: 'Source Sans Pro', sans-serif;
 }
-
 .nav-fixed{
 	padding-top: 60px;
 }
@@ -120,7 +121,9 @@ a:focus {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
+.social a{
+	color: #ECF0F1;
+}
 .phone {
 	display: inline-block;
 	font-size: 14px;
@@ -164,6 +167,10 @@ nav li a{
 	text-transform: uppercase;
 	font-size: 14px;
 	
+}
+
+nav li a:visited{
+	color: #ECF0F1;
 }
 
 nav li a:hover{
@@ -226,13 +233,12 @@ nav li a:hover{
 header {
 	position: relative;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 630px;
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	margin-bottom: 20px;
-/*	padding-top: 60px;*/
 }
 
 
@@ -289,6 +295,7 @@ header {
 	font-size: 22px;
 	margin-bottom: 0;
 	text-shadow: none;
+	color: #ECF0F1;
 }
 
 
@@ -328,6 +335,7 @@ header {
 	color: #2C3E50;
 	position: relative;
 	padding-top: 60px;
+	
 
 }
 .about-title{
@@ -389,11 +397,6 @@ header {
 	background-attachment: fixed;
 	min-height: 500px;
 	margin-bottom: 50px;	
-}
-
-.parallax-window-two{
-	min-height: 500px;
-	background: transparent;
 }
 
 .advantage>.container{
@@ -468,12 +471,12 @@ header {
 
 
 
-
 /*//////////////////////////////////////// present /////////////////////////////////////////////*/
 
 .present{
 	min-height: 600px;
 	margin-bottom: 60px;
+	position: relative;
 }
 
 .present-title {
@@ -756,6 +759,8 @@ div.ui-draggable.ui-draggable-handle{
 
 /*//////////////////////////////////////// reviews /////////////////////////////////////////////*/
 
+/*//////////////////////////////////////// reviews /////////////////////////////////////////////*/
+
 .reviews {
 	color: #2C3E50;
 	min-height: 500px;
@@ -834,6 +839,75 @@ div.ui-draggable.ui-draggable-handle{
 
 
 
+
+
+.accordion-container{
+  position: relative;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.set{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #3498DB;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+.set > a{
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ECF0F1;
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+	
+}
+.set > a i{
+  position:relative;
+  float: right;
+  margin-top:4px;
+  color: #ECF0F1;
+}
+.set > a.active{
+  background-color: #2980B9;
+  color: #ECF0F1;
+}
+.set > a.active i{
+  color: #ECF0F1;
+}
+.content{
+  position:relative;
+  width: 100%;
+  height: auto;
+  background-color: #ECF0F1;
+  border-bottom: 1px solid #ddd;
+  display:none;
+}
+.content p{
+  padding: 10px 15px;
+  margin: 0;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .faq {
   max-width: 500px;
   margin: 0 auto 30px;
@@ -861,13 +935,14 @@ div.ui-draggable.ui-draggable-handle{
   display: none;
 	background-color: #ECF0F1;
 }
+*/
 
 
 /*//////////////////////////////////////// contact /////////////////////////////////////////////*/
 
 .contact{
 	min-height: 300px;
-	background-image: url(../img/footer_bg.jpg);
+	background-image: url(../img/hd-wallpapers11.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -920,6 +995,7 @@ div.ui-draggable.ui-draggable-handle{
 	margin-left: 50px;
 /*	box-shadow: 2px 2px 3px #e5e5e5;*/
 	margin-bottom: 30px;
+	position: relative;
 
 }
 .forms h3{
@@ -963,6 +1039,25 @@ div.ui-draggable.ui-draggable-handle{
 .forms button:active{
 	position: relative;
 	top: 2px;
+}
+
+.form-tnx {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #2C3E50;
+	color: #ECF0F1;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 130px;
+}
+
+.visible{
+	display: block;
 }
 
 /*-------кнопка норм---------*/
@@ -1069,7 +1164,7 @@ color:#fff;
 }
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
-	opacity: 0.95;
+	opacity: 0.8;
 }
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {

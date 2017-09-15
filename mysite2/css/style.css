@@ -1,9 +1,11 @@
+.pageWrapper {
+	height: 500px;
+}
 .wrap {
   position: relative;
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  min-height: 400px;
   margin: 50px auto;
-  overflow: hidden;
 	color: black;
 }
 
@@ -29,7 +31,7 @@
   font-size: 40px;
   position: absolute;
   left: -200px;
-  bottom: 40px;
+  bottom: 20px;
   animation: slideleft 2s 4s;
   animation-fill-mode: forwards;
 }
@@ -38,16 +40,17 @@
   font-size: 40px;
   position: absolute;
   right: -200px;
-  bottom: 40px;
+  bottom: 20px;
   animation: slideright 2s 4s;
   animation-fill-mode: forwards;
 }
 
 .stars {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 50%;
   transform: translate(-50%);
+	z-index: 10;
 }
 
 .fa {

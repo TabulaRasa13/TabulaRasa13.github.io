@@ -32,7 +32,7 @@
   position: absolute;
   left: -200px;
   bottom: 20px;
-  animation: slideleft 2s 4s;
+  animation: slideleft 2s 4.5s;
   animation-fill-mode: forwards;
 }
 
@@ -41,7 +41,7 @@
   position: absolute;
   right: -200px;
   bottom: 20px;
-  animation: slideright 2s 4s;
+  animation: slideright 2s 4.5s;
   animation-fill-mode: forwards;
 }
 

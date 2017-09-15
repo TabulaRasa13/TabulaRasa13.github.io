@@ -1,7 +1,7 @@
 .wrap {
   position: relative;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
   margin: 50px auto;
   overflow: hidden;
 /*	color: black;*/
@@ -14,8 +14,8 @@
   align-content: flex-start;
   flex-flow: row wrap;
   position: relative;
-  width: 400px;
-  height: 350px;
+  max-width: 400px;
+  max-height: 350px;
   margin: 50px auto;
   overflow: hidden;
   background-image: url(http://s018.radikal.ru/i515/1709/3a/db6a9bbdd5a5.jpg);

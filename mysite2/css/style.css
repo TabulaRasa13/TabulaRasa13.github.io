@@ -1,0 +1,215 @@
+.wrap {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+	color: black;
+}
+
+.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+  flex-flow: row wrap;
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 50px auto;
+  overflow: hidden;
+  background-image: url(http://s018.radikal.ru/i515/1709/3a/db6a9bbdd5a5.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: scale 1s 6.9s;
+}
+
+.text-left {
+  font-size: 40px;
+  position: absolute;
+  left: -200px;
+  bottom: 40px;
+  animation: slideleft 2s 4s;
+  animation-fill-mode: forwards;
+}
+
+.text-right {
+  font-size: 40px;
+  position: absolute;
+  right: -200px;
+  bottom: 40px;
+  animation: slideright 2s 4s;
+  animation-fill-mode: forwards;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.fa {
+  margin: 10px;
+  font-size: 50px;
+  color: gold;
+}
+
+.star1 {
+  opacity: 0;
+  animation: stars 2s 4s;
+  animation-fill-mode: forwards;
+}
+
+.star2 {
+  opacity: 0;
+  animation: stars 2s 4.5s;
+  animation-fill-mode: forwards;
+}
+
+.star3 {
+  opacity: 0;
+  animation: stars 2s 5s;
+  animation-fill-mode: forwards;
+}
+
+.item {
+  z-index: 2;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border: 1px solid black;
+  flex: 1 30px;
+}
+
+.a1 {
+  animation: boom 4s normal;
+  animation-fill-mode: forwards;
+}
+
+.b1 {
+  animation: boom2 3s normal;
+  animation-fill-mode: forwards;
+}
+
+.c1 {
+  animation: boom3 4s normal 1s;
+  animation-fill-mode: forwards;
+}
+
+.d1 {
+  animation: boom4 4s normal 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boom {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+    transform: skew(15deg, 10deg);
+  }
+}
+@keyframes boom2 {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+    transform: skew(-15deg, -10deg);
+  }
+}
+@keyframes boom3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+    transform: rotateY(80deg);
+  }
+}
+@keyframes boom4 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.2);
+    transform: translate3d(-30deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  12% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes stars {
+  0% {
+    transform: scale(0);
+    transform: rotate(-180deg);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(0.5);
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideleft {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 30px;
+  }
+}
+@keyframes slideright {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 30px;
+  }
+}

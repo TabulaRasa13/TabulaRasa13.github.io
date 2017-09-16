@@ -15,6 +15,8 @@ img {
   min-width: 320px;
   min-height: 240px;
   position: relative;
+	cursor: pointer;
+	
 }
 
 .wrap {
@@ -29,10 +31,14 @@ img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: scale 1s 8s;
+	
+  
+}
+.wrap-anim{
+	animation: scale 1s 8s;
   animation-fill-mode: forwards;
 }
-.wrap::before {
+.wrap-opac:before {
   content: "";
   position: absolute;
   top: 0;
@@ -41,20 +47,30 @@ img {
   width: 100%;
   height: 100%;
   background-color: white;
-  animation: opac 3s 1.5s;
+	animation: opac 3s 1.5s;
+  animation-fill-mode: forwards;
+  
+}
+/*
+.wrap-opac{
+	animation: opac 3s 1.5s;
   animation-fill-mode: forwards;
 }
+*/
 
 .stars {
   position: absolute;
+	height: 40px;
   top: 5px;
   left: 50%;
   transform: translate(-50%);
-  z-index: 2;
+/*	z-index: 1;*/
   font-size: 30px;
   color: gold;
 }
-
+.starsz{
+	z-index: 1;
+}
 .fa {
   margin: 5px;
 }
@@ -64,7 +80,7 @@ img {
   animation: stars 2s 5s, scale 1s 8s;
   animation-fill-mode: forwards;
 }
-
+	
 .star2 {
   opacity: 0;
   animation: stars 2s 6s, scale 1s 8s;
@@ -137,11 +153,11 @@ img {
     transform: rotate(-180deg);
   }
   30% {
-    opacity: 1;
     transform: scale(0.5);
     transform: rotate(90deg);
   }
   100% {
+		
     opacity: 1;
     transform: scale(1);
     transform: rotate(360deg);

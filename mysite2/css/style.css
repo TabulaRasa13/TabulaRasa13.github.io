@@ -1,6 +1,6 @@
 body {
   height: 100%;
-	color: black;
+/*	color: white;*/
 	font-size: 0;
 	
 }
@@ -60,8 +60,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: white;
-	-webkit-animation: opac 3s 2.3s;
-	        animation: opac 3s 2.3s;
+	-webkit-animation: opac 6s 2.3s;
+	        animation: opac 6s 2.3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   
@@ -136,8 +136,8 @@ img {
           animation-fill-mode: forwards;
 }
 .anim-a3 {
-  -webkit-animation: anima3 3s 2s;
-          animation: anima3 3s 2s;
+  -webkit-animation: anima3 3.8s 2s;
+          animation: anima3 3.8s 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

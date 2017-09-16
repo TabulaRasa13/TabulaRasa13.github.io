@@ -1,218 +1,116 @@
-.pageWrapper {
-	height: 500px;
-}
-.wrap {
-  position: relative;
-  width: 400px;
-  min-height: 400px;
-  margin: 50px auto;
-	color: black;
+body {
+  height: 100%;
+	color: #000;
 }
 
-.block {
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+	margin: 100px auto;
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: flex-start;
-  flex-flow: row wrap;
-  position: relative;
-  max-width: 400px;
-  max-height: 350px;
-  margin: 50px auto;
-  overflow: hidden;
+  max-width: 320px;
+  min-width: 320px;
+  min-height: 240px;
   background-image: url(http://s018.radikal.ru/i515/1709/3a/db6a9bbdd5a5.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  animation: scale 1s 7.2s;
 }
 
-.text-left {
-  font-size: 40px;
-  position: absolute;
-  left: -200px;
-  bottom: 20px;
-  animation: slideleft 2s 4.5s;
-  animation-fill-mode: forwards;
-}
-
-.text-right {
-  font-size: 40px;
-  position: absolute;
-  right: -200px;
-  bottom: 20px;
-  animation: slideright 2s 4.5s;
-  animation-fill-mode: forwards;
-}
-
-.stars {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translate(-50%);
-	z-index: 10;
-}
-
-.fa {
-  margin: 10px;
-  font-size: 40px;
-  color: gold;
-}
-
-.star1 {
-  opacity: 0;
-  animation: stars 2s 4s;
-  animation-fill-mode: forwards;
-}
-
-.star2 {
-  opacity: 0;
-  animation: stars 2s 4.5s;
-  animation-fill-mode: forwards;
-}
-
-.star3 {
-  opacity: 0;
-  animation: stars 2s 5s;
-  animation-fill-mode: forwards;
+.wrap {
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
 }
 
 .item {
-  z-index: 2;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border: 1px solid black;
-  flex: 1 30px;
+  height: 60px;
+  flex: 15%;
+  backface-visibility: visible;
 }
 
-.a1 {
-  animation: boom 4s normal;
-  animation-fill-mode: forwards;
+.anim {
+  position: relative;
+  background-color: #000;
+}
+.anim-a {
+  animation: anima 4s 1s;
+}
+.anim-a2 {
+  animation: anima 3.5s 1.5s;
+}
+.anim-a3 {
+  animation: anima3 3s 2s;
+}
+.anim-a4 {
+  animation: anima 3s 2.7s;
+}
+.anim-a5 {
+  animation: anima3 3s 2.5s;
+}
+.anim-b {
+  animation: animb 4s 0.5s;
+}
+.anim-b2 {
+  animation: animb 3.5s 1.7s;
+}
+.anim-b3 {
+  animation: animb 3s 2.7s;
+}
+.anim-b4 {
+  animation: anima2 3s 2.7s;
 }
 
-.b1 {
-  animation: boom2 3s normal;
-  animation-fill-mode: forwards;
-}
-
-.c1 {
-  animation: boom3 4s normal 1s;
-  animation-fill-mode: forwards;
-}
-
-.d1 {
-  animation: boom4 4s normal 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes boom {
+@keyframes anima {
   0% {
-    transform: scale(1);
     opacity: 1;
   }
-  30% {
+  40% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: scale(0.2);
-    transform: skew(15deg, 10deg);
+    transform: scale(0.7) rotateY(80deg) translateX(-20px) skew(-10deg, 5deg);
   }
 }
-@keyframes boom2 {
+@keyframes animb {
   0% {
     opacity: 1;
   }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.2);
-    transform: skew(-15deg, -10deg);
-  }
-}
-@keyframes boom3 {
-  0% {
+  40% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: scale(0.2);
-    transform: rotateY(80deg);
+    transform: scale(0.7) rotateY(-80deg) translateX(20px) skew(10deg, -5deg);
   }
 }
-@keyframes boom4 {
+@keyframes anima2 {
   0% {
-    transform: scale(1);
     opacity: 1;
   }
-  30% {
+  40% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: scale(0.2);
-    transform: translate3d(-30deg);
+    transform: scale(0.1) rotateY(80deg);
   }
 }
-@keyframes scale {
+@keyframes anima3 {
   0% {
-    transform: scale(1);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  12% {
-    transform: scale(1.1);
-  }
-  15% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(1);
-  }
-  85% {
-    transform: scale(1.1);
-  }
-  90% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes stars {
-  0% {
-    transform: scale(0);
-    transform: rotate(-180deg);
-  }
-  30% {
     opacity: 1;
-    transform: scale(0.5);
-    transform: rotate(90deg);
   }
-  100% {
+  40% {
     opacity: 1;
-    transform: scale(1);
-    transform: rotate(360deg);
-  }
-}
-@keyframes slideleft {
-  0% {
-    left: -200px;
   }
   100% {
-    left: 30px;
-  }
-}
-@keyframes slideright {
-  0% {
-    right: -200px;
-  }
-  100% {
-    right: 30px;
+    opacity: 0;
+    transform: scale(0.1) rotateY(-80deg);
   }
 }

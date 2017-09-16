@@ -1,6 +1,6 @@
 body {
   height: 100%;
-	color: #000;
+	color: black;
 }
 
 img {
@@ -9,27 +9,59 @@ img {
 }
 
 .wrapper {
-	margin: 100px auto;
+  margin: 100px auto;
   display: flex;
   max-width: 320px;
   min-width: 320px;
   min-height: 240px;
-  background-image: url(http://s018.radikal.ru/i515/1709/3a/db6a9bbdd5a5.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
 .wrap {
+  margin-top: 10px;
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   min-width: 320px;
   width: 100%;
   height: 100%;
+  background-image: url(http://s018.radikal.ru/i515/1709/3a/db6a9bbdd5a5.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: scale 1s 8.3s;
+  animation-fill-mode: forwards;
+}
+
+.stars {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  font-size: 30px;
+  color: gold;
+}
+
+.fa {
+  margin: 5px;
+}
+
+.star1 {
+  opacity: 0;
+  animation: stars 2s 5s;
+  animation-fill-mode: forwards;
+}
+
+.star2 {
+  opacity: 0;
+  animation: stars 2s 6s;
+  animation-fill-mode: forwards;
 }
 
 .item {
   height: 60px;
+  background-color: #000;
   flex: 15%;
   backface-visibility: visible;
 }
@@ -40,30 +72,39 @@ img {
 }
 .anim-a {
   animation: anima 4s 1s;
+  animation-fill-mode: forwards;
 }
 .anim-a2 {
   animation: anima 3.5s 1.5s;
+  animation-fill-mode: forwards;
 }
 .anim-a3 {
   animation: anima3 3s 2s;
+  animation-fill-mode: forwards;
 }
 .anim-a4 {
   animation: anima 3s 2.7s;
+  animation-fill-mode: forwards;
 }
 .anim-a5 {
-  animation: anima3 3s 2.5s;
+  animation: animb 3s 2.5s;
+  animation-fill-mode: forwards;
 }
 .anim-b {
   animation: animb 4s 0.5s;
+  animation-fill-mode: forwards;
 }
 .anim-b2 {
   animation: animb 3.5s 1.7s;
+  animation-fill-mode: forwards;
 }
 .anim-b3 {
   animation: animb 3s 2.7s;
+  animation-fill-mode: forwards;
 }
 .anim-b4 {
-  animation: anima2 3s 2.7s;
+  animation: anima 3s 2.7s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes anima {
@@ -75,7 +116,49 @@ img {
   }
   100% {
     opacity: 0;
-    transform: scale(0.7) rotateY(80deg) translateX(-20px) skew(-10deg, 5deg);
+    transform: scale(0.7) rotateY(60deg) translateX(-20px) skew(-10deg, 5deg);
+  }
+}
+@keyframes stars {
+  0% {
+    transform: scale(0);
+    transform: rotate(-180deg);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(0.5);
+    transform: rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  12% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1.1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 @keyframes animb {
@@ -87,7 +170,7 @@ img {
   }
   100% {
     opacity: 0;
-    transform: scale(0.7) rotateY(-80deg) translateX(20px) skew(10deg, -5deg);
+    transform: scale(0.7) rotateY(-60deg) translateX(20px) skew(10deg, -5deg);
   }
 }
 @keyframes anima2 {

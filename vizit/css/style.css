@@ -60,26 +60,49 @@ a:focus {
 header{
 	min-height: 50px;
 	position: relative;
-	overflow: hidden;
+/*	overflow: hidden;*/
 /*	border-bottom: 1px solid rgba(255, 255, 255, 0.91);*/
-	border-bottom: 1px solid rgba(226, 234, 40, 0.3);
-	background-color: rgba(0, 0, 0, 0.9);
+/*	border-bottom: 1px solid rgba(226, 234, 40, 0.3);*/
+	/*	background-color: rgba(0, 0, 0, 0.9);*/
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 70%, rgba(34, 70, 49, 0.79));
+	box-shadow: 0px 1px 2px 0px rgba(226, 234, 40, 0.3);
 }
 
 .logo{
 	display: inline-block;
-	width: 50px;
+	width: 40px;
 	height: 50px;
 	line-height: 70px;
 	margin-right: 10px;
+	padding: 5px;
+/*	margin-top: 5px;*/
 }
-
+.logo2{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 95px;
+	height: 95px;
+	background-color: rgb(255, 255, 255);
+/*	background: linear-gradient(to right, rgba(255, 255, 255, 0.79) 10%, rgba(249, 255, 79, 0.88) 50%, rgba(255, 255, 255, 0.79) 90%);*/
+	border-radius: 50%;
+	transform: translate(-50%);
+	border: 2px solid rgba(227, 234, 40, 0.9);
+	z-index: 2;
+}
+.logo2 img{
+	width: 68px;
+	margin-top: 12px;
+	margin-left: 8px;
+}
 .logo img{
 	vertical-align: top;
+	padding-top: 5px;
 }
 
 .brand {
 	display: inline-block;
+	margin-left: 60px;
 }
 
 .brand-name {
@@ -149,9 +172,11 @@ i.fa-phone{
 
 
 /*----------------------  Навигация   -----------------------*/
+.nav-menu{
+	margin-top: 120px;
+}
 .nav-menu ul{
 	margin: 0;
-	margin-top: 120px;
 	padding: 0;
 	text-align: center;
 	list-style: none;
@@ -159,7 +184,7 @@ i.fa-phone{
 
 .nav-menu ul li{
 	font-family: 'Lobster', cursive;
-	font-size: 30px;
+	font-size: 28px;
 	width: 100%;
 	height: 35px;
 	margin-bottom: 8px;
@@ -200,9 +225,11 @@ i.fa-phone{
 	min-height: 300px;
 }
 
+/*
 .content img{
 	width: 600px;	
 }
+*/
 
 i.fa-flask__big{
 	font-size: 180px;
@@ -286,6 +313,7 @@ i.fa-flask__norm{
 /*	background-color: aqua;*/
 	width: 100%;
 	text-align: justify;
+	padding-top: 10px;
 
 }
 .about img{
@@ -297,11 +325,45 @@ i.fa-flask__norm{
 
 
 /*----------------------  ВИДЫ УСЛУГ   -----------------------*/
-
+.service{
+	height: 100%;
+	min-height: 400px;
+	margin: 0 auto;
+/*
+	background-image:url(../img/card2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 100px;
+*/
+}
 
 
 /*----------------------  ЦЕНЫ   -----------------------*/
+table{
+	width: 100%;
+	min-width: 320px;
+}
 
+.table-wrap {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	
+}
+th {
+  padding: 10px; 
+  border: 1px solid rgba(226, 234, 40, 0.3);
+	background-color: rgba(34, 70, 49, 0.6);
+	color: #E3EA28;
+	font-weight: normal;
+}
+td {
+  padding: 20px 10px;
+  border: 1px solid rgba(226, 234, 40, 0.2);
+	background-color: rgba(0, 0, 0, 0.6);
+/*	color: black;*/
+}
 
 
 /*----------------------  ГАЛЕРЕЯ   -----------------------*/
@@ -419,11 +481,15 @@ footer{
 	width: 100%;
 	line-height: 20px;
 	min-height: 20px;
-	background-color: rgba(0, 0, 0, 0.9);
+/*	background-color: rgba(0, 0, 0, 0.9);*/
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 70%, rgba(34, 70, 49, 0.79));
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 13px;
+	box-shadow: 0px -2px 3px 0px rgba(226, 234, 40, 0.3);
+/*
 	border-top: 1px solid rgba(255, 255, 255, 0.91);
 	border-top: 1px solid rgba(226, 234, 40, 0.3);
+*/
 }
 
 footer a{

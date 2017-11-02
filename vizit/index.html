@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="css/media.css?version=7" />
 		<script src="libs/respond/respond.min.js"></script>
 	</head>
-<body>
+<body id="myPage">
 
 <div class="pageWrapper" style="background-image: url(img/bg123.jpg);">
 
@@ -32,10 +32,16 @@
 <header class="myheader">
 		<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<div class="logo">
-							<img src="img/logo.png" alt="" width="" height="">
+				<div class="logo2">
+							<img src="img/logo%20mal%20svg.svg" alt="" width="" height="">
 						</div>
+					<div class="col-md-6">
+					
+<!--
+						<div class="logo">
+							<img src="img/logo%20mal%20svg.svg" alt="" width="" height="">
+						</div>
+-->
 						<div class="brand">
 							<span class="brand-name">Изготовление Визиток</span>
 							<span class="brand-name__discr">Эксклюзивный дизайн любая сложность</span>
@@ -62,6 +68,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
+				
 				<div class="nav-menu">
 						<ul>
 							<li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
@@ -81,6 +88,7 @@
 					<div class="tab-pane fade in active" id="home">
 						<div class="col-md-9 content text-center">
 							<h1 class="tab-title">Сайт находиться в стадии разработки</h1>
+						
 								<div class="center-block">
 									<i class="fa fa-flask fa-flask fa-flask__big" aria-hidden="true"></i>
 									<i class="fa fa-flask fa-flask__small" aria-hidden="true"></i>
@@ -106,8 +114,9 @@
 			
 <!----------------------  О нас вкладка ------------------------->		
 				 <div class="tab-pane fade" id="about">
+				 <h1 class="tab-title">О нас</h1>
 					 <div class="col-md-12 about">
-						<h1 class="tab-title">О нас</h1>
+						
 						<img src="img/poligrafiya.jpg" alt="" width="" height="" class="pull-right">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur alias maiores nulla! Aliquid, laudantium, quaerat. Assumenda minima at accusantium voluptate dolorem, saepe. Amet aliquid aut quos tempora ullam quas sint eveniet ipsum veniam quisquam dolorum placeat velit voluptatum non, alias nostrum ducimus dolorem quia, molestias, nesciunt quidem at autem esse, laboriosam saepe. Ipsum dolorum, iusto libero numquam adipisci eum aliquid, repellendus dolore, perspiciatis sapiente nesciunt quas consequuntur? </p>
 						<p>Est quod quidem maxime amet tempora laudantium iure enim nihil omnis officia expedita voluptatum blanditiis quibusdam, nisi inventore, in. Illo quae neque quam culpa deleniti natus eos veritatis perspiciatis, enim nam et ea quia aut excepturi velit rem porro voluptatum, veniam sunt iure! Ipsa sint dicta cupiditate repellat corporis explicabo iusto tempore molestias. Est repellat explicabo, dolore ullam qui quibusdam delectus tempore, fugit dicta mollitia quos quae ducimus ex praesentium debitis expedita neque consectetur natus ipsum ad voluptatum!</p>
@@ -116,9 +125,9 @@
          
 <!----------------------  Виды услуг вкладка ------------------------->	          
 					 <div class="tab-pane fade" id="service">
+					 	<h1 class="tab-title">Виды услуг</h1>
+					 	
 						 <div class="col-md-12 text-center service">
-							<h1 class="tab-title">Виды услуг</h1>
-							
 							 <div class="row text-center">
           	<div class="col-md-4 card">
           		<i class="fa fa-scissors" aria-hidden="true"></i>
@@ -146,9 +155,76 @@
 					 <div class="tab-pane fade" id="price">
 						 <div class="col-md-12 text-center">
 							<h1 class="tab-title">Цены</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur alias maiores nulla! Aliquid, laudantium, quaerat.</p>
-						<p>Est quod quidem maxime amet tempora laudantium iure enim nihil omnis officia expedita voluptatum blanditiis quibusdam, nisi inventore, in. Illo quae neque quam culpa deleniti natus eos veritatis perspiciatis, enim nam et ea quia aut excepturi velit rem porro voluptatum, veniam sunt iure!</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consequuntur alias maiores nulla! Aliquid, laudantium, quaerat. </p>
+							<div class="table-wrap">
+							<table>
+								 <thead>
+									<tr>
+										<th colspan="2">№ п/п</th>
+										<th rowspan="2">Наименование товара</th>
+										 <th>Ед. изм.</th>
+										 <th>Количество</th>
+										 <th>Цена за ед. изм., руб.</th>
+									</tr>
+								 </thead>
+								 <tbody>
+									<tr>
+										<td rowspan="2"> 1.</td>
+										<td>123</td>
+										<td>кг</td>
+										<td>15,20</td>
+										<td>69,00</td>
+										<td>1048,80</td>
+										
+									</tr>
+									<tr>
+										<td>2.</td>
+										<td>12321211</td>
+										<td >кг</td>
+										<td>2,50</td>
+										<td>1048,80</td>
+									</tr>
+									<tr>
+										<td>2.</td>
+										<td>144666</td>
+										<td >кг</td>
+										<td>2,50</td>
+										<td>2,50</td>
+										<td>2,50</td>
+									</tr>
+								</tbody> 
+								<tfoot>
+									<tr>
+										<td colspan="5" style="text-align:right">ИТОГО:</td>
+										<td>1168,80</td>
+									</tr>
+								</tfoot>
+							</table>		
+						</div>	
+																																											
+<!--
+						<table>
+							<colgroup>
+								<col span="2" style="background:rgba(0, 0, 0, 0.5);"> 
+								<col style="background-color:rgba(34, 70, 49, 0.5);">
+							</colgroup>
+							<tr>
+								<th>№ п/п</th>
+								<th>Наименование</th>
+								<th>Цена, руб.</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Карандаш цветной</td>
+								<td>20,00</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Линейка 20 см</td>
+								<td>30,00</td>
+							</tr>
+						</table>
+-->
+						
 					 </div>
 					</div>
 					
